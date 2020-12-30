@@ -1,0 +1,20 @@
+
+
+<div class="jumbotron-dark">
+	<h1 class="display-4"> 
+		<%= @sozler.yazar %>
+
+</h1>
+
+<br/> <br/>
+<p class="lead"> <strong>Soz:</strong>
+	<%= @sozler.soz %> </p>
+<hr class="my-4">
+<%= link_to 'Güncelle', edit_sozler_path(@sozler), class:"btn btn-secondary" %> 
+<%= link_to 'Geri', sozlers_path , class:"btn btn-dark" %>
+
+</div>
+
+
+
+

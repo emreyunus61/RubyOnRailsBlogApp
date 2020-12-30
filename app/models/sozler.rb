@@ -1,0 +1,2 @@
+class Sozler < ApplicationRecord
+end

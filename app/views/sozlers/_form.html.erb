@@ -1,0 +1,28 @@
+<%= form_with(model: sozler) do |form| %>
+  <% if sozler.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sozler.errors.count, "error") %> prohibited this sozler from being saved:</h2>
+
+      <ul>
+        <% sozler.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-group">
+    <%= form.label :yazar %>
+    <%= form.text_field :yazar, class:"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :soz %>
+    <%= form.text_field :soz, class:"form-control"  %>
+  </div>
+
+  <div class="actions">
+    <br>
+    <%= form.submit 'Söz Oluştur',class:"btn btn-secondary"  %>
+  </div>
+<% end %>

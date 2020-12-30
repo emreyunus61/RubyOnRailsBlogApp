@@ -1,0 +1,23 @@
+<h3>Arama Sonucu</h3>  
+
+<% if  ! params[:q].blank? %> 
+
+    <% @results.each do |result| %>  
+
+    
+        <%= result.yazar %><br>  
+
+        <%= result.soz %><br>  
+
+   
+    <% end %>
+
+
+<% else %>
+
+<div class="alert alert-warning" style="background-color: #FFCCFF">
+  <strong>Uyarı!</strong> Aradığınız Yazar Bulunamadı.
+
+ 	
+ </div>
+    <% end %>

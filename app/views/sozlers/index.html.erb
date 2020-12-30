@@ -1,0 +1,29 @@
+
+
+<h1>Sözler</h1>
+
+<br/>
+<table class="table table-striped table-bordered table-hover ">
+  <thead class="thead-dark">
+    <tr>
+      <th>Yazar</th>
+      <th>Soz</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sozlers.each do |sozler| %>
+      <tr>
+        <td><%= sozler.yazar %></td>
+        <td><%= sozler.soz %></td>
+        <td><%= link_to 'Göster', sozler %></td>
+        <td><%= link_to 'Güncelle', edit_sozler_path(sozler) %></td>
+        <td><%= link_to 'Sil', sozler, method: :delete, data: { confirm: 'Emin misiniz?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
