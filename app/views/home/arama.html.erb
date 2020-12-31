@@ -1,6 +1,10 @@
-<h3>Arama Sonucu</h3>  
+   
+ <center><h3>Arama Sonucu</h3></center>
+<br>
 
-<% if  ! params[:q].blank? %> 
+ <div class="jumbotron text-center" style="background-color: #FFCCFF" >
+    
+ <% if  ! params[:q].blank? %> 
 
     <% @results.each do |result| %>  
 
@@ -21,3 +25,7 @@
  	
  </div>
     <% end %>
+
+  </div>
+
+

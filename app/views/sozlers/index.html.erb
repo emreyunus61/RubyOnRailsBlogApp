@@ -17,9 +17,9 @@
       <tr>
         <td><%= sozler.yazar %></td>
         <td><%= sozler.soz %></td>
-        <td><%= link_to 'Göster', sozler %></td>
-        <td><%= link_to 'Güncelle', edit_sozler_path(sozler) %></td>
-        <td><%= link_to 'Sil', sozler, method: :delete, data: { confirm: 'Emin misiniz?' } %></td>
+        <td><%= link_to 'Göster', sozler ,class:" btn btn-dark"  %> </td>
+        <td><%= link_to 'Güncelle', edit_sozler_path(sozler),class:" btn btn-dark" %></td>
+        <td><%= link_to 'Sil', sozler,class:" btn btn-dark", method: :delete, data: { confirm: 'Emin misiniz?' } %></td>
       </tr>
     <% end %>
   </tbody>
