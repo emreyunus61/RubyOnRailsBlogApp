@@ -45,6 +45,7 @@ group :development do
 
   group :production  do
         gem 'pg', '~> 1.2', '>= 1.2.3'
+        #gem 'rails_12factor', '002'
   end
 
   # Display performance information such as SQL time and flame graphs for each request in your browser.

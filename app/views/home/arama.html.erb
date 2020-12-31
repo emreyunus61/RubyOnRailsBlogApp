@@ -1,31 +1,40 @@
    
- <center><h3>Arama Sonucu</h3></center>
+<center><h3>Arama Sonucu</h3></center>
 <br>
 
- <div class="jumbotron text-center" style="background-color: #FFCCFF" >
-    
- <% if  ! params[:q].blank? %> 
+<div class="card m-2" style="width: 19rem;height:18rem; float: left;overflow: auto;">
 
-    <% @results.each do |result| %>  
+	
+	<div class="card-body" style="background-color: #FFCCFF">
 
-    
-        <%= result.yazar %><br>  
+		<div class="card" style="border: none;background-color:#FFCCFF">
 
-        <%= result.soz %><br>  
+			<div class="card-body text-center">
 
-   
-    <% end %>
+				<% if  ! params[:q].blank? %> 
+
+				<% @results.each do |result| %>  
 
 
-<% else %>
+				<%= result.yazar %><br>  
 
-<div class="alert alert-warning" style="background-color: #FFCCFF">
-  <strong>Uyarı!</strong> Aradığınız Yazar Bulunamadı.
+				<%= result.soz %><br>  
+                  <br><br>
 
- 	
- </div>
-    <% end %>
+				<% end %>
 
-  </div>
 
+				<% else %>
+
+				<div class="alert alert-warning" style="background-color: #FFCCFF">
+					<strong>Uyarı!</strong> Aradığınız Yazar Bulunamadı.
+
+
+				</div>
+
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>
 
